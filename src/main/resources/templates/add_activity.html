@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" xmlns:th="http://www.thymeleaf.org">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <title>Flash Sale</title>
+  <link rel="stylesheet" type="text/css" href="/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="/css/pages-getOrderInfo.css" />
+</head>
+
+<body>
+  <!--head-->
+
+  <div id="nav-bottom">
+
+    <div class="nav-top">
+      <div class="top">
+        <div class="py-container">
+          <div class="shortcut">
+            <ul class="fl">
+              <li class="f-item"></li>
+              <li class="f-item"><a href="login.html" target="_blank">Login</a>　<span><a href="register.html"
+                    target="_blank">Register</a></span></li>
+            </ul>
+            <div class="fr typelist">
+              <ul class="types">
+                <li class="f-item"><span>My Order</span></li>
+
+                <li class="f-item"><span><a href="cart.html" target="_blank">My Cart</a></span></li>
+                <li class="f-item"><span>Cooperation Purchase</span></li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="header">
+        <div class="py-container">
+          <div class="yui3-g Logo">
+            <div class="yui3-u Left logoArea">
+              <a class="logo-bd" title="青橙" href="index.html" target="_blank"></a>
+            </div>
+            <div class="yui3-u Rit searchArea">
+              <div class="search">
+                <form action="" class="sui-form form-inline">
+                  <!--searchAutoComplete-->
+                  <div class="input-append">
+                    <input type="text" id="autocomplete" class="input-error input-xxlarge" />
+                    <button class="sui-btn btn-xlarge btn-danger" type="button">Search</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="cart py-container" id="cart">
+    <!--主内容-->
+    <div class="checkout py-container">
+      <div class="checkout-tit">
+        <h4 class="tit-txt">Add new Sale</h4>
+      </div>
+      <div class="checkout-steps">
+        <div class="hr"></div>
+        <!--支付和送货-->
+        <div class="payshipInfo">
+          <div class="hr"></div>
+          <div class="step-cont">
+            <ul class="send-detail">
+              <li>
+                <div class="sendGoods">
+                  <form th:action="@{/addFlashsaleActivityAction}" method="post">
+                    Flash Sale Name<input type="text" name="name"><br><br>
+                    Goods Id<input type="text" name="commodityId"><br><br>
+                    Sale Price<input type="text" name="flashsalePrice"><br><br>
+                    Goods Previuos Price：<input type="text" name="oldPrice"><br><br>
+                    Goods Number<input type="text" name="flashsaleNumber"><br><br>
+                    Start Time<input type="datetime-local" name="startTime"><br><br>
+                    End Time<input type="datetime-local" name="endTime"><br><br>
+                    <input type="submit" value="submit">
+                  </form>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+          <div class="hr"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="clearfix footer">
+    <div class="py-container">
+      <div class="footlink">
+        <div class="Mod-service">
+          <ul class="Mod-Service-list">
+            <li class="grid-service-item intro  intro1">
+
+              <i class="serivce-item fl"></i>
+              <div class="service-text">
+          
+              </div>
+
+            </li>
+            <li class="grid-service-item  intro intro2">
+
+              <i class="serivce-item fl"></i>
+              <div class="service-text">
+              </div>
+
+            </li>
+            <li class="grid-service-item intro  intro3">
+
+              <i class="serivce-item fl"></i>
+              <div class="service-text">
+              </div>
+
+            </li>
+            <li class="grid-service-item  intro intro4">
+
+              <i class="serivce-item fl"></i>
+              <div class="service-text">
+              </div>
+
+            </li>
+            <li class="grid-service-item intro intro5">
+
+              <i class="serivce-item fl"></i>
+              <div class="service-text">>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix Mod-list">
+          <div class="yui3-g">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--页面底部END-->
+  <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+
+  <script src="/js/vue.js"></script>
+  <script src="/js/axios.js"></script>
+</body>
+
+</html>

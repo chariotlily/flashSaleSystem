@@ -1,0 +1,88 @@
+{
+  "list": [
+    {
+    "name": "Pinyou Shopping Page",
+    "item":[
+        {
+          "title":"Shopping process page",
+           "datalist" :[
+              {"tit":"Home","url":"./JD-index.html"},
+              {"tit":"List page","url":"./list.html"},
+              {"tit":"Details page","url":"item.html"},
+              {"tit":"Shopping Cart","url":"cart.html"},
+              {"tit":"Successful Buy Now","url":"success-cart.html"},
+              {"tit":"Checkout page","url":"getOrderInfo.html"},
+              {"tit":"Payment page","url":"pay.html"},
+              {"tit":"Payment verification page","url":"payconfirm.html"},
+              {"tit":"WeChat payment page","url":"weixinpay.html"},
+              {"tit":"Payment success page","url":"paysuccess.html"},
+              {"tit":"Payment Failed Page","url":"payfail.html"}]
+
+        },
+        {
+          "title":"Personal Center",
+           "datalist" :[
+              {"tit":"My Pinyou Shopping","url":"home.html"},
+              {"tit":"My Order Page","url":"myOrder.html"},
+              {"tit":"delivery address","url":"addressList.html"}]
+        },
+        {
+          "title":"Login to register",
+           "datalist" :[
+              {"tit":"login","url":"login.html"},
+              {"tit":"My Order Page","url":"myOrder.html"},
+              {"tit":"register","url":"register.html"}]
+        }
+      ]
+  },{
+    "name": "Seckill page",
+    "item":[
+        {
+          "title":"Main Page",
+           "datalist" :[
+             {"tit":"Home","url":"flashsale-index.html"},
+             {"tit":"Details page","url":"flashsale-item.html"}
+           ]
+        },{
+          "title":"My order",
+           "datalist" :[
+             {"tit":"My order page","url":"flashsaleOrder.html"},
+             {"tit":"Pending payment","url":"flashsaleorder-pay.html"},
+             {"tit":"to be shipped","url":"flashsaleorder-send.html"},
+             {"tit":"to be received","url":"flashsaleorder-receive.html"},
+             {"tit":"To be evaluated","url":"flashsaleorder-evaluate.html"},
+             {"tit":"My Collection","url":"flashsaleperson-collect.html"},
+             {"tit":"My Footmark","url":"flashsaleperson-footmark.html"},
+             {"tit":"My Comment","url":"mycomment.html"},
+             {"tit":"personal information","url":"flashsalesetting-info.html"},
+             {"tit":"Address management","url":"flashsalesetting-address.html"},
+             {"tit":"Security Management","url":"flashsalesetting-safe.html"},
+             {"tit":"Bind new phone number","url":"flashsalesetting-address-phone.html"},
+             {"tit":"Mobile phone number binding successfully","url":"flashsalesetting-address-complete.html"}
+           ]
+        }
+      ]
+  },{
+    "name": "Business Page",
+    "item":[
+        {
+          "title":"Store",
+           "datalist" :[
+             {"tit":"Home","url":"shop.html"}
+           ]
+        },{
+          "title":"Business",
+           "datalist" :[
+             {"tit":"Business Login","url":"shoplogin.html"},
+             {"tit":"Cooperation Investment","url":"cooperation.html"},
+             {"tit":"Become a supplier","url":"sampling.html"}
+           ]
+        },{
+          "title":"Background",
+           "datalist" :[
+             {"tit":"Background login","url":"login-manage.html"}
+           ]
+        }
+      ]
+  }]
+}

@@ -1,0 +1,49 @@
+{
+  "totalQuantity":2,
+  "totalPrices":8998,
+  "orders":[
+    {
+      "shop":"Dragon Official Flagship Store",
+      "orderItems":[
+        {
+          "pid":"10803521657",
+          "image":"http://img10.360buyimg.com/cms/s80x80_jfs/t2941/284/2460981288/184644/79d9d20b/57bd9890N73efbc30.jpg",
+          "title":"Turnron Destroyer DC Desktop Processor GTX950M 4G Large Video Memory 15.6 Inch Gaming Laptop 1",
+          "color":"black",
+          "size":"I3-6100/8G/500G+128G",
+          "unitPrice":4499,
+          "quantity":1,
+          "gift":[
+            {
+              "pid":"10633272618",
+              "title_eng":"[Duanlong] Laptop exclusive wired gaming mouse Dragon Soul Mecha"
+            },
+            {
+              "pid":"10629228032",
+              "title_eng":"[Duanlong] exclusive gaming laptop mouse pad black thickened and enlarged soft black"
+            }
+          ]
+        },
+        {
+          "pid":"10803523232",
+          "image":"http://img10.360buyimg.com/cms/s80x80_jfs/t2941/284/2460981288/184644/79d9d20b/57bd9890N73efbc30.jpg",
+          "title":"Turnron Destroyer DC Desktop Processor GTX950M 4G Large Video Memory 15.6 Inch Gaming Laptop 2",
+          "color":"black",
+          "size":"I3-6100/8G/500G+128G",
+          "unitPrice":4499,
+          "quantity":1,
+          "gift":[
+            {
+              "pid":"10633272618",
+              "title_eng":"[Duanlong] Laptop exclusive wired gaming mouse Dragon Soul Mecha"
+            },
+            {
+              "pid":"10629228032",
+              "title_eng":"[Duanlong] exclusive gaming laptop mouse pad black thickened and enlarged soft black"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

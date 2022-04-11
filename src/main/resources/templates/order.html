@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="/css/pages-getOrderInfo.css" />
+</head>
+
+<body>
+	<!--head-->
+
+
+<div id="nav-bottom">
+
+	<div class="nav-top">
+		<div class="top">
+			<div class="py-container">
+				<div class="shortcut">
+					<ul class="fl">
+						<li class="f-item"></li>
+						<li class="f-item"><a href="login.html" target="_blank">Login</a>　<span><a href="register.html" target="_blank">Register</a></span></li>
+					</ul>
+					<div class="fr typelist">
+						<ul class="types">
+							<li class="f-item"><span>My Order</span></li>
+							
+							<li class="f-item"><span><a href="cart.html" target="_blank">My Cart</a></span></li>
+							<li class="f-item"><span>Cooperation Purchase</span></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div class="header">
+			<div class="py-container">
+				<div class="yui3-g Logo">
+					<div class="yui3-u Left logoArea">
+						<a class="logo-bd" title="Lime" href="index.html" target="_blank"></a>
+					</div>
+					<div class="yui3-u Rit searchArea">
+						<div class="search">
+							<form action="" class="sui-form form-inline">
+								<!--searchAutoComplete-->
+								<div class="input-append">
+									<input type="text" id="autocomplete" class="input-error input-xxlarge" />
+									<button class="sui-btn btn-xlarge btn-danger" type="button">Search</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class="cart py-container" id="cart">
+
+		<div class="checkout py-container">
+			<div class="checkout-tit">
+				<h4 class="tit-txt">Order Info</h4>
+			</div>
+			<div class="checkout-steps">
+				<div class="hr"></div>
+
+				<div class="payshipInfo">
+					<div class="step-tit">
+						<h5>Payment Method</h5>
+					</div>
+					<div class="step-cont">
+						<ul class="payType">
+							<li class="selected" @click="order.payType='1'">Pay Online<span title=""></span></li>
+
+
+						</ul>
+					</div>
+					<div class="hr"></div>
+					<div class="step-cont">
+						<ul class="send-detail">
+							<li>
+								<div class="sendGoods">
+									<span>Order Number</span><em th:text="${order.orderNo}"></em>
+								</div>
+								<div class="sendGoods">
+									<span>Order Status</span>
+									<em th:switch="${order.orderStatus}">
+										<span th:case="0">No STock</span>
+										<span th:case="1">Waiting for payment</span>
+										<span th:case="2">Paid, waiting for shippment</span>
+										<span th:case="99">No Pay, close order</span>
+									</em>
+								</div>
+								<div class="sendGoods">
+									<span>Flash Sale Info</span><em th:text="${flashsaleActivity.name}"></em>
+								</div>
+								<div class="sendGoods">
+									<span>Order creation time</span><em th:text="${#dates.format(order.createTime,'yyyy-MM-dd HH:mm:ss')}"></em>
+								</div>
+							</li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="hr"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix trade">
+			<div class="fc-price">Order Price Total:　<span class="price"></span></div>
+			<em th:text="'￥'+${order.orderAmount}"></em>
+		</div>
+
+		<em th:switch="${order.orderStatus}">
+			<span th:case="1">
+				<div class="submit">
+					<a class="sui-btn btn-danger btn-xlarge" th:href="@{'/flashsale/payOrder/' + ${order.orderNo}}">Payment</a>
+				</div>
+			</span>
+		</em>
+	</div>
+	<!-- 底部栏位 -->
+
+<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+
+<script src="/js/vue.js"></script>
+<script src="/js/axios.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "brand" : [
+    {"id":"1104","name":"ThinkPad","img":"http://img30.360buyimg.com/popshop/jfs/t1942/324/2199852492/5097/ec93bd23/56ca5bc8N20a06bc4.png"},
+    {"id":"1105","name":"ASUS","img":"http://img30.360buyimg.com/popshop/jfs/t3253/35/3166587018/6222/30160834/57ecd5a6N4f0e49bf.png"},
+    {"id":"1106","name":"Apple","img":"http://img30.360buyimg.com/popshop/jfs/t2989/240/151377693/3895/30ad9044/574d36dbN262ef26d.jpg"},
+    {"id":"1107","name":"ACER","img":"http://img30.360buyimg.com/popshop/jfs/t2092/46/2121751562/4086/c57f3b5/56ab1f83N5bcc41b7.jpg"},
+    {"id":"1108","name":"SAMSUNG","img":"http://img30.360buyimg.com/popshop/jfs/t2701/34/484677369/7439/ee13e8fa/5716e2c4Nc925baf3.jpg"}
+  ],
+  "category" : [
+    {
+      "name":"Computer",
+      "items":[
+        {"id":"601","name":"NoteBook"},
+        {"id":"602","name":"GameLapTop"}
+      ]
+    },
+    {
+      "name":"Size",
+      "items":[
+        {"id":"701","name":"11.6"},
+        {"id":"702","name":"12.5"},
+        {"id":"703","name":"13.3"},
+        {"id":"704","name":"14.0"},
+        {"id":"705","name":"15."},
+        {"id":"706","name":"17.3"}
+      ]
+    },
+    {
+      "name":"CPU",
+      "items":[
+        {"id":"801","name":"Intel i3"},
+        {"id":"802","name":"Intel i5"},
+        {"id":"804","name":"Intel i7"},
+        {"id":"805","name":"Intel i7"},
+        {"id":"806","name":"AMD"}
+      ]
+    }
+  ],
+  "advop" : [
+    {
+      "name":"Memeory",
+      "items":[
+        {"id":"2201","name":"2G"},
+        {"id":"2202","name":"4G"},
+        {"id":"2203","name":"8G"},
+        {"id":"2204","name":"16G"},
+        {"id":"2205","name":"32G"}
+      ]
+    },
+    {
+      "name":"Hard Disk",
+      "items":[
+        {"id":"2301","name":"500G"},
+        {"id":"2302","name":"1T"},
+        {"id":"2303","name":"128GSSD"},
+        {"id":"2304","name":"256GSSD"},
+        {"id":"2305","name":"256GSSD"},
+        {"id":"2306","name":"Other"}
+      ]
+    }
+  ]
+}

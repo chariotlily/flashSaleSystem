@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <title>秒杀结果页</title>
+    <link rel="stylesheet" type="text/css" href="/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/pages-getOrderInfo.css"/>
+</head>
+
+<body>
+<!--head-->
+<div id="nav-bottom">
+    <div class="nav-top">
+        <div class="top">
+            <div class="py-container">
+                <div class="shortcut">
+                    <ul class="fl">
+                        <li class="f-item"></li>
+                        <li class="f-item"><a href="login.html" target="_blank">Login</a>　<span><a href="register.html"
+                                                                                                 target="_blank">Register</a></span>
+                        </li>
+                    </ul>
+                    <div class="fr typelist">
+                        <ul class="types">
+                            <li class="f-item"><span>My Order</span></li>
+
+                            <li class="f-item"><span><a href="cart.html" target="_blank">My Cart</a></span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="py-container">
+                <div class="yui3-g Logo">
+                    <div class="yui3-u Left logoArea">
+                        <a class="logo-bd" title="Lime" href="index.html" target="_blank"></a>
+                    </div>
+                    <div class="yui3-u Rit searchArea">
+                        <div class="search">
+                            <form action="" class="sui-form form-inline">
+                                <!--searchAutoComplete-->
+                                <div class="input-append">
+                                    <input type="text" id="autocomplete" class="input-error input-xxlarge"/>
+                                    <button class="sui-btn btn-xlarge btn-danger" type="button">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="cart py-container" id="cart">
+    <div class="checkout py-container">
+        <div class="checkout-tit">
+            <h4 class="tit-txt">Result</h4>
+        </div>
+        <div class="checkout-steps">
+            <div class="hr"></div>
+            <div class="payshipInfo">
+                <div class="hr"></div>
+                <div class="step-cont">
+                    <ul class="send-detail">
+                        <li>
+                            <div class="sendGoods">
+                                <em th:text="${resultInfo}"></em>
+                            </div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="hr"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="submit">
+        <a class="sui-btn btn-danger btn-xlarge" th:href="@{'/flashsale/orderQuery/'+ ${orderNo}}"
+           target='_blank'>Order Info</a>
+    </div>
+</div>
+<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+
+<script src="/js/vue.js"></script>
+<script src="/js/axios.js"></script>
+</body>
+</html>

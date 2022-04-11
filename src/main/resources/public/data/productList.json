@@ -1,0 +1,38 @@
+{
+  "page" : 1,
+  "allPages" : 225,
+  "items" :[
+    {
+      "pid" : "1001",
+      "title" : "Lenovo ZUK Z1221 Mobile Unicom Telecom Full Netcom 4G Smartphone 64GB Gray",
+      "img" : "https://img10.360buyimg.com/n7/jfs/t3139/321/2862305788/45655/9c0b2635/57e784edN212e45c3.jpg",
+      "price" : 1399,
+      "comments" : 20,
+      "promotion" : "Coupon 99-6 This product can receive a coupon"
+    },
+    {
+      "pid" : "1001",
+      "title" : "Xiaomi (MI) Xiaomi 5 Full Netcom 4G Dual SIM Dual Standby Mobile Phone Black Full Netcom (3G RAM+32G ROM) Standard Edition",
+      "img" : "https://img12.360buyimg.com/n7/jfs/t3778/23/248159574/113545/b18d9302/5805c281N105b26ef.jpg",
+      "price" : 1668,
+      "comments" : 30,
+      "promotion" : "Buy this item and get a free gift"
+    },
+    {
+      "pid" : "1001",
+      "title" : "Meizu (MEIZU) Meizu E Smartphone 4G Dual SIM Dual Standby Star Grey Full Netcom (3G+32G) Standard",
+      "img" : "https://img13.360buyimg.com/n7/jfs/t3745/264/95881333/50578/ef2f8299/5800ada7N2a02e9b8.jpg",
+      "price" : 1168,
+      "comments" : 11,
+      "promotion" : ""
+    },
+    {
+      "pid" : "1001",
+      "title" : "Xiaomi Mi Mi 5S Plus mobile phone gold full Netcom high-end version (6G RAM+128G ROM) standard",
+      "img" : "https://img13.360buyimg.com/n7/jfs/t3052/262/3765174058/199143/2b735e53/57f8a7d8Nc9457c17.jpg",
+      "price" : 2888,
+      "comments" : 20,
+      "promotion" : "Buy this item and get a free gift"
+    }
+  ]
+}
